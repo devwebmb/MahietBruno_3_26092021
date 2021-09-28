@@ -1,0 +1,19 @@
+{
+  "name": "mahietbruno_3_26092021",
+  "version": "1.0.0",
+  "description": "Projet 3 de la formation développeur web d'Opencalssrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devwebmb/MahietBruno_3_26092021.git"
+  },
+  "author": "Bruno Mahiet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devwebmb/MahietBruno_3_26092021/issues"
+  },
+  "homepage": "https://github.com/devwebmb/MahietBruno_3_26092021#readme"
+}
