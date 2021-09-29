@@ -1,0 +1,26 @@
+//footer
+
+footer {
+  width: 100%;
+  background-color: $footer-backgroud-color;
+  padding: 25px;
+
+  .footer__title {
+    padding-bottom: 15px;
+  }
+
+  .footer__title img {
+    height: 1em;
+    width: auto;
+  }
+
+  .footer__item {
+    display: flex;
+    color: $footer-content;
+    padding-bottom: 8px;
+  }
+
+  .footer__item img {
+    padding-right: 15px;
+  }
+}
