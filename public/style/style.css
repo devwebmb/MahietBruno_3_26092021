@@ -104,4 +104,29 @@ footer .footer__item img {
   padding-right: 15px;
 }
 
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: #eaeaea;
+  padding: 20px 0;
+}
+.search-bar .search-bar__input {
+  border: none;
+  background-color: #eaeaea;
+  font-weight: bold;
+  text-align: center;
+  transform: translateX(-6px);
+  z-index: 0;
+  outline: none;
+}
+.search-bar .search-bar__input::placeholder {
+  opacity: 1;
+  color: black;
+}
+.search-bar .search-bar__icon {
+  z-index: 1;
+  transform: translateX(18px);
+}
+
 /*# sourceMappingURL=style.css.map */
