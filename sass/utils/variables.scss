@@ -3,18 +3,25 @@
 $primary: #9656dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
+//$primary-lighten: lighten($primary, 5%);
+//$secondary-lighten: lighten($secondary, 5%);
 
 //footer logo color
 .filter-white {
     filter: invert(100%) sepia(0%) saturate(791%) hue-rotate(301deg) brightness(107%) contrast(102%);
 }
 
+$white: #fff;
 $footer-content: #fff;
 $footer-backgroud-color: #353535;
 
+$service-introduction-background-color: #f6f6f6;
 $restaurant-choice-background-color: #f6f6f6;
 
-$fuctioning__item-background-color: #f5edff;
+
+$functioning__item-background-color: #f6f6f6;
+$functioning__item-background-color-hover: #f5edff;
+$functioning-icon: #7e7e7e;
 
 $search-bar-background-color:#eaeaea;
 
