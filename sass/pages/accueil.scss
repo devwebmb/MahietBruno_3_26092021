@@ -166,7 +166,7 @@
 
     &__icon {
         position: absolute;
-        font-size: 1.5rem;
+        //font-size: 1.5rem;
         top: 50%;
         right: 25px;
         transform: translateY(-50%);
@@ -174,25 +174,27 @@
 
         &:hover {
             opacity: 0;
-            display: none;
         }
     }
 
     &__icon-hover {
         position: absolute;
-        font-size: 1.5rem;
+        //font-size: 1.5rem;
         top: 50%;
         right: 25px;
         transform: translateY(-50%);
         transition: all .5s;
         opacity: 0;
-        background: linear-gradient( $primary, $secondary);
+        /*background: linear-gradient( $primary, $secondary);
         -webkit-background-clip: text;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;*/
 
         &:hover {
             opacity: 1;
+            .restaurant-prev-text-content__icon {
+                opacity: 0;
+            }
         }
     }
 }

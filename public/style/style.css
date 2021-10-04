@@ -247,7 +247,6 @@ footer .footer__item img {
 }
 .restaurant-prev-text-content__icon {
   position: absolute;
-  font-size: 1.5rem;
   top: 50%;
   right: 25px;
   transform: translateY(-50%);
@@ -255,23 +254,24 @@ footer .footer__item img {
 }
 .restaurant-prev-text-content__icon:hover {
   opacity: 0;
-  display: none;
 }
 .restaurant-prev-text-content__icon-hover {
   position: absolute;
-  font-size: 1.5rem;
   top: 50%;
   right: 25px;
   transform: translateY(-50%);
   transition: all 0.5s;
   opacity: 0;
-  background: linear-gradient(#9656dc, #ff79da);
+  /*background: linear-gradient( $primary, $secondary);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
 }
 .restaurant-prev-text-content__icon-hover:hover {
   opacity: 1;
+}
+.restaurant-prev-text-content__icon-hover:hover .restaurant-prev-text-content__icon {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

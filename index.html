@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ohmyfood</title>
 
     <!--icon page link-->
@@ -16,124 +16,172 @@
     />
 
     <!--style link-->
-    <link rel="stylesheet" href="./public/style/style.css">
+    <link rel="stylesheet" href="./public/style/style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <img src="./public/images/logo/ohmyfood.png" alt="Logo de l'entreprise Ohmyfood" class="header__heading">
+      <img
+        src="./public/images/logo/ohmyfood.png"
+        alt="Logo de l'entreprise Ohmyfood"
+        class="header__heading"
+      />
     </header>
 
     <main>
-        <section class="search-bar">
-            <i class="fas fa-map-marker-alt search-bar__icon"></i>
-            <input type="text" placeholder="Paris, Belleville" class="search-bar__input">
-        </section>
-    
-        <section class="service-introduction">
-            <div class="service-introduction__title">
-                <h2>Réservez le menu qui vous convient</h2>
-            </div>
-            <div class="service-introduction__paragraph">
-                <p>Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
-            </div>
-            <a href="" class="service-introduction__link">
-                Explorer nos restaurants
-            </a>
-        </section>
-    
-        <section class="functioning">
-                <h2 class="functioning__title">Fonctionnement</h2>
-            <article class="functioning__item">
-                <p>1</p>
-                <i class="fas fa-mobile-alt"></i>
-                <p>Choisissez un restaurant</p>
-            </article>
-            <article class="functioning__item">
-                <p>2</p>
-                <i class="fas fa-list-ul"></i>
-                <p>Composez votre menu</p>
-            </article>
-            <article class="functioning__item">
-                <p>3</p>
-                <i class="fas fa-store"></i>
-                <p>Dégustez au restaurant</p>
-            </article>          
-        </section>
+      <section class="search-bar">
+        <i class="fas fa-map-marker-alt search-bar__icon"></i>
+        <input
+          type="text"
+          placeholder="Paris, Belleville"
+          class="search-bar__input"
+        />
+      </section>
 
-        <section class="restaurant-choice" id="restaurant-anchor">
-            <h2 class="restaurant-choice__title">Restaurants</h2>
-            <div class="restaurants-choice__previews">
-                <a href="./la-palette-du-gout.html" class="restaurant-prev">
-                    <div class="restaurant-prev__img">
-                        <img src="./public/images/restaurants/palette-du-gout.jpg" alt="Photo d'une assiette de nourriture">
-                    </div>
-                    <div class="restaurant-prev-text-content">
-                        <h3 class="restaurant-prev-text-content__title">La palette du goût</h3>
-                        <p class="restaurant-prev-text-conten__paragraph">Ménilmontant</p>
-                        <i class="far fa-heart restaurant-prev-text-content__icon"></i>
-                        <i class="fas fa-heart restaurant-prev-text-content__icon-hover"></i>
-                    </div>
-                </a>
-                <a href="./la-note-enchantee.html" class="restaurant-prev">
-                    <div class="restaurant-prev__img">
-                        <img src="./public/images/restaurants/note-enchantee.jpg" alt="Photo d'une assiette de nourriture">
-                    </div>
-                    <div class="restaurant-prev-text-content">
-                        <h3 class="restaurant-prev-text-content__title">La note enchantée</h3>
-                        <p class="restaurant-prev-text-conten__paragraph">Charonne</p>
-                        <i class="far fa-heart restaurant-prev-text-content__icon"></i>
-                        <i class="fas fa-heart restaurant-prev-text-content__icon-hover"></i>
-                    </div>
-                </a>
-                <a href="./a-la-francaise.html" class="restaurant-prev">
-                    <div class="restaurant-prev__img">
-                        <img src="./public/images/restaurants/a-la-francaise.jpg" alt="Photo d'une assiette de nourriture">
-                    </div>
-                    <div class="restaurant-prev-text-content">
-                        <h3 class="restaurant-prev-text-content__title">&#193; la française</h3>
-                        <p class="restaurant-prev-text-conten__paragraph">Cité rouge</p>
-                        <i class="far fa-heart restaurant-prev-text-content__icon"></i>
-                        <i class="fas fa-heart restaurant-prev-text-content__icon-hover"></i>
-                    </div>
-                </a> 
-                <a href="./le-delice-des-sens.html" class="restaurant-prev">
-                    <div class="restaurant-prev__img">
-                        <img src="./public/images/restaurants/delice-des-sens.jpg" alt="Photo d'une assiette de nourriture">
-                    </div>
-                    <div class="restaurant-prev-text-content">
-                        <h3 class="restaurant-prev-text-content__title">Le délice des sens</h3>
-                        <p class="restaurant-prev-text-conten__paragraph">Folie-Méricourt</p>
-                        <i class="far fa-heart restaurant-prev-text-content__icon"></i>
-                        <i class="fas fa-heart restaurant-prev-text-content__icon-hover"></i>
-                    </div>
-                </a>                                                           
+      <section class="service-introduction">
+        <div class="service-introduction__title">
+          <h2>Réservez le menu qui vous convient</h2>
+        </div>
+        <div class="service-introduction__paragraph">
+          <p>
+            Découvrez des restaurants d'exeption, sélectionnés par nos soins.
+          </p>
+        </div>
+        <a href="" class="service-introduction__link">
+          Explorer nos restaurants
+        </a>
+      </section>
+
+      <section class="functioning">
+        <h2 class="functioning__title">Fonctionnement</h2>
+        <article class="functioning__item">
+          <p>1</p>
+          <i class="fas fa-mobile-alt"></i>
+          <p>Choisissez un restaurant</p>
+        </article>
+        <article class="functioning__item">
+          <p>2</p>
+          <i class="fas fa-list-ul"></i>
+          <p>Composez votre menu</p>
+        </article>
+        <article class="functioning__item">
+          <p>3</p>
+          <i class="fas fa-store"></i>
+          <p>Dégustez au restaurant</p>
+        </article>
+      </section>
+
+      <section class="restaurant-choice" id="restaurant-anchor">
+        <h2 class="restaurant-choice__title">Restaurants</h2>
+        <div class="restaurants-choice__previews">
+          <a href="./la-palette-du-gout.html" class="restaurant-prev">
+            <div class="restaurant-prev__img">
+              <img
+                src="./public/images/restaurants/palette-du-gout.jpg"
+                alt="Photo d'une assiette de nourriture"
+              />
             </div>
-        </section>
+            <div class="restaurant-prev-text-content">
+              <h3 class="restaurant-prev-text-content__title">
+                La palette du goût
+              </h3>
+              <p class="restaurant-prev-text-conten__paragraph">Ménilmontant</p>
+              <!--<i class="far fa-heart restaurant-prev-text-content__icon"></i>
+              <i class="fas fa-heart restaurant-prev-text-content__icon-hover"></i>-->
+              <img src="./public/images/icons/path864.png" alt="" class="restaurant-prev-text-content__icon">
+              <img src="./public/images/icons/path863.png" alt="" class="restaurant-prev-text-content__icon-hover">
+            </div>
+          </a>
+          <a href="./la-note-enchantee.html" class="restaurant-prev">
+            <div class="restaurant-prev__img">
+              <img
+                src="./public/images/restaurants/note-enchantee.jpg"
+                alt="Photo d'une assiette de nourriture"
+              />
+            </div>
+            <div class="restaurant-prev-text-content">
+              <h3 class="restaurant-prev-text-content__title">
+                La note enchantée
+              </h3>
+              <p class="restaurant-prev-text-conten__paragraph">Charonne</p>
+              <i class="far fa-heart restaurant-prev-text-content__icon"></i>
+              <i
+                class="fas fa-heart restaurant-prev-text-content__icon-hover"
+              ></i>
+            </div>
+          </a>
+          <a href="./a-la-francaise.html" class="restaurant-prev">
+            <div class="restaurant-prev__img">
+              <img
+                src="./public/images/restaurants/a-la-francaise.jpg"
+                alt="Photo d'une assiette de nourriture"
+              />
+            </div>
+            <div class="restaurant-prev-text-content">
+              <h3 class="restaurant-prev-text-content__title">
+                &#193; la française
+              </h3>
+              <p class="restaurant-prev-text-conten__paragraph">Cité rouge</p>
+              <i class="far fa-heart restaurant-prev-text-content__icon"></i>
+              <i
+                class="fas fa-heart restaurant-prev-text-content__icon-hover"
+              ></i>
+            </div>
+          </a>
+          <a href="./le-delice-des-sens.html" class="restaurant-prev">
+            <div class="restaurant-prev__img">
+              <img
+                src="./public/images/restaurants/delice-des-sens.jpg"
+                alt="Photo d'une assiette de nourriture"
+              />
+            </div>
+            <div class="restaurant-prev-text-content">
+              <h3 class="restaurant-prev-text-content__title">
+                Le délice des sens
+              </h3>
+              <p class="restaurant-prev-text-conten__paragraph">
+                Folie-Méricourt
+              </p>
+              <i class="far fa-heart restaurant-prev-text-content__icon"></i>
+              <i
+                class="fas fa-heart restaurant-prev-text-content__icon-hover"
+              ></i>
+            </div>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer__title">
-            <img src="./public/images/logo/ohmyfood@2x.svg" alt="Logo de l'entreprise Ohmyfood" class="filter-white">
-        </div>
-        <a href="" class="footer__item">
-            <!--<i class="fas fa-utensils "></i>-->
-            <img src="./public/images/icons/utensils-solid.redimensionne.svg" alt="Icône d'un couteau et une forchette">
-            <p>Proposer un restaurant</p>
-        </a>
-        <a href="" class="footer__item">
-            <!--<i class="fas fa-hands-helping "></i>-->
-            <img src="./public/images/icons/hands-helping-solid.rdimensionne.svg" alt="Icône de deux mains qui se serrent">
-            <p>Devenir partenaire</p>
-        </a>
-        <a href="" class="footer__item">
-            <p>Mentions légales</p>
-        </a>
-        <a href="" class="footer__item">
-            <p>Contact</p>
-        </a>
+      <div class="footer__title">
+        <img
+          src="./public/images/logo/ohmyfood@2x.svg"
+          alt="Logo de l'entreprise Ohmyfood"
+          class="filter-white"
+        />
+      </div>
+      <a href="" class="footer__item">
+        <!--<i class="fas fa-utensils "></i>-->
+        <img
+          src="./public/images/icons/utensils-solid.redimensionne.svg"
+          alt="Icône d'un couteau et une forchette"
+        />
+        <p>Proposer un restaurant</p>
+      </a>
+      <a href="" class="footer__item">
+        <!--<i class="fas fa-hands-helping "></i>-->
+        <img
+          src="./public/images/icons/hands-helping-solid.rdimensionne.svg"
+          alt="Icône de deux mains qui se serrent"
+        />
+        <p>Devenir partenaire</p>
+      </a>
+      <a href="" class="footer__item">
+        <p>Mentions légales</p>
+      </a>
+      <a href="" class="footer__item">
+        <p>Contact</p>
+      </a>
     </footer>
-    
-</body>
+  </body>
 </html>
