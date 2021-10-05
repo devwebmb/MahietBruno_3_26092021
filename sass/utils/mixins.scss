@@ -20,20 +20,12 @@
 
 @mixin heart-icon {
     .empty {
-        //position: absolute;
         font-size: 1.5rem;
-        //top: 50%;
-        //right: 25px;
-        //transform: translateY(-50%);
         transition: all .5s;
     }
 
     .full {
-        //position: absolute;
         font-size: 1.5rem;
-        //top: 50%;
-        //right: 25px;
-        //transform: translateY(-50%);
         transition: all .5s;
         opacity: 0;
         background: linear-gradient( $primary, $secondary);
