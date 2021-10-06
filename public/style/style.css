@@ -361,7 +361,20 @@ footer .footer__item img {
   opacity: 0.85;
 }
 
+.first-animation {
+  animation: page-menu-animation 2s forwards;
+}
+
+.second-animation {
+  animation: page-menu-animation 2s 2s forwards;
+}
+
+.third-animation {
+  animation: page-menu-animation 2s 4s forwards;
+}
+
 .menu-item {
+  opacity: 0;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -392,14 +405,6 @@ footer .footer__item img {
 .menu-item:hover {
   margin-right: 60px;
   border-radius: 10px 0 0 10px;
-  /*.hover-item {
-    animation: .5s menu-animation forwards;
-
-    &__icon {
-      transition: .5s;
-      animation:.5s icon-menu-animation forwards; 
-    }
-  }*/
 }
 .menu-item:hover .hover-item {
   right: -60px;
@@ -433,18 +438,6 @@ footer .footer__item img {
   opacity: 0;
 }
 
-@keyframes menu-animation {
-  0% {
-    opacity: 1;
-    width: 0;
-    right: 0;
-  }
-  100% {
-    opacity: 1;
-    width: 60px;
-    right: -60px;
-  }
-}
 @keyframes icon-menu-animation {
   0% {
     opacity: 0;
@@ -457,6 +450,16 @@ footer .footer__item img {
   100% {
     opacity: 1;
     transform: rotate(0);
+  }
+}
+@keyframes page-menu-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(65px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 

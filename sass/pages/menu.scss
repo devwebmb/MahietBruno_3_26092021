@@ -63,7 +63,20 @@
 
 // restaurant menu article
 
+.first-animation {
+  animation: page-menu-animation 2s forwards;
+}
+
+.second-animation {
+  animation: page-menu-animation 2s 2s forwards;
+}
+
+.third-animation {
+  animation: page-menu-animation 2s 4s forwards;
+}
+
 .menu-item {
+  opacity: 0;
   background-color: $white;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -75,7 +88,7 @@
   position: relative;
   @include first-box-shadow;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 
   &__content {
     font-weight: 300;
@@ -96,23 +109,15 @@
   &:hover {
     margin-right: 60px;
     border-radius: 10px 0 0 10px;
-        
+
     .hover-item {
       right: -60px;
       width: 60px;
 
       &__icon {
-        animation:.5s icon-menu-animation forwards;
+        animation: 0.5s icon-menu-animation forwards;
       }
     }
-    /*.hover-item {
-      animation: .5s menu-animation forwards;
-
-      &__icon {
-        transition: .5s;
-        animation:.5s icon-menu-animation forwards; 
-      }
-    }*/
   }
 }
 
@@ -129,7 +134,7 @@
   color: $white;
   border-radius: 0 10px 10px 0;
   @include first-box-shadow;
-  transition: .5s;
+  transition: 0.5s;
 
   &__icon {
     width: 60px;
@@ -143,21 +148,7 @@
   }
 }
 
-//animation menu
-
-@keyframes menu-animation {
-  0% {
-    opacity: 1;
-    width: 0;
-    right: 0;
-  }
-
-  100% {
-    opacity: 1;
-    width: 60px;
-    right: -60px;
-  }
-}
+//icon menu animation
 
 @keyframes icon-menu-animation {
   0% {
@@ -173,5 +164,19 @@
   100% {
     opacity: 1;
     transform: rotate(0);
+  }
+}
+
+// menu page animation
+
+@keyframes page-menu-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(65px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
