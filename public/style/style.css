@@ -392,12 +392,20 @@ footer .footer__item img {
 .menu-item:hover {
   margin-right: 60px;
   border-radius: 10px 0 0 10px;
+  /*.hover-item {
+    animation: .5s menu-animation forwards;
+
+    &__icon {
+      transition: .5s;
+      animation:.5s icon-menu-animation forwards; 
+    }
+  }*/
 }
 .menu-item:hover .hover-item {
-  animation: 0.5s menu-animation forwards;
+  right: -60px;
+  width: 60px;
 }
 .menu-item:hover .hover-item__icon {
-  transition: 0.5s;
   animation: 0.5s icon-menu-animation forwards;
 }
 
@@ -405,14 +413,13 @@ footer .footer__item img {
   position: absolute;
   right: 0;
   top: 0;
-  width: 60px;
+  width: 0px;
   height: 65px;
   text-align: center;
   background-color: #99e2d0;
   color: #fff;
   border-radius: 0 10px 10px 0;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  opacity: 0;
   transition: 0.5s;
 }
 .hover-item__icon {

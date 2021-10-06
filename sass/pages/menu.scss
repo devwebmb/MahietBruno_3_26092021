@@ -96,15 +96,23 @@
   &:hover {
     margin-right: 60px;
     border-radius: 10px 0 0 10px;
-
+        
     .hover-item {
+      right: -60px;
+      width: 60px;
+
+      &__icon {
+        animation:.5s icon-menu-animation forwards;
+      }
+    }
+    /*.hover-item {
       animation: .5s menu-animation forwards;
 
       &__icon {
         transition: .5s;
         animation:.5s icon-menu-animation forwards; 
       }
-    }
+    }*/
   }
 }
 
@@ -114,14 +122,13 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 60px;
+  width: 0px;
   height: 65px;
   text-align: center;
   background-color: $hover-item-background-color;
   color: $white;
   border-radius: 0 10px 10px 0;
   @include first-box-shadow;
-  opacity: 0;
   transition: .5s;
 
   &__icon {
