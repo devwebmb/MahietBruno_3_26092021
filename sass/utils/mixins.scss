@@ -21,12 +21,12 @@
 @mixin heart-icon {
     .empty {
         font-size: 1.5rem;
-        transition: all .5s;
+        transition: all 1s;
     }
 
     .full {
         font-size: 1.5rem;
-        transition: all .5s;
+        transition: all 1s;
         opacity: 0;
         background: linear-gradient( $primary, $secondary);
         -webkit-background-clip: text;

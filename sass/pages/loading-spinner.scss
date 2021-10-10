@@ -1,0 +1,43 @@
+// loading spinner animation
+
+@keyframes start-delay {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+// loading-spinner style
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width:250px;
+  width: 100%;
+  margin: 50vh auto auto auto;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.loading-spinner__logo {
+}
+
+.loadind-spinner__paragraph {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  color: $secondary;
+  pad: 1.5rem;
+  border: 3px solid $primary;
+  border-radius: 50%;
+  font-family: $logo-title-font;
+}

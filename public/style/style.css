@@ -100,6 +100,49 @@ footer .footer__item img {
   padding-right: 15px;
 }
 
+@keyframes start-delay {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 250px;
+  width: 100%;
+  margin: 50vh auto auto auto;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.loadind-spinner__paragraph {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 2rem;
+  color: #ff79da;
+  pad: 1.5rem;
+  border: 3px solid #9656dc;
+  border-radius: 50%;
+  font-family: "Shrikhand", cursive;
+}
+
+.start-animation {
+  animation: 3s start-delay forwards;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
 .search-bar {
   display: flex;
   justify-content: center;
@@ -172,12 +215,15 @@ footer .footer__item img {
   transform: translateX(15px);
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   transition: all 1s;
+  cursor: pointer;
 }
 .functioning .functioning__item:hover {
+  transition-duration: 1s;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
   background-color: #f5edff;
 }
 .functioning .functioning__item:hover i {
+  transition-duration: 1s;
   color: #9656dc;
 }
 .functioning .functioning__item :nth-child(1) {
@@ -257,11 +303,11 @@ footer .footer__item img {
 }
 .restaurant-prev-text-content .heart-icon .empty {
   font-size: 1.5rem;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 .restaurant-prev-text-content .heart-icon .full {
   font-size: 1.5rem;
-  transition: all 0.5s;
+  transition: all 1s;
   opacity: 0;
   background: linear-gradient(#9656dc, #ff79da);
   -webkit-background-clip: text;
@@ -274,7 +320,8 @@ footer .footer__item img {
 .restaurant-prev-text-content .heart-icon:hover > .full:hover {
   opacity: 1;
 }
-.restaurant-prev-text-content .heart-icon .empty, .restaurant-prev-text-content .heart-icon .full {
+.restaurant-prev-text-content .heart-icon .empty,
+.restaurant-prev-text-content .heart-icon .full {
   position: absolute;
   right: 25px;
   top: 50%;
@@ -302,11 +349,11 @@ footer .footer__item img {
 }
 .restaurant-menu .heart-icon .empty {
   font-size: 1.5rem;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 .restaurant-menu .heart-icon .full {
   font-size: 1.5rem;
-  transition: all 0.5s;
+  transition: all 1s;
   opacity: 0;
   background: linear-gradient(#9656dc, #ff79da);
   -webkit-background-clip: text;
@@ -441,10 +488,10 @@ footer .footer__item img {
 @keyframes icon-menu-animation {
   0% {
     opacity: 0;
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
   }
   50% {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     opacity: 1;
   }
   100% {

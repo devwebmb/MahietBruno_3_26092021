@@ -1,3 +1,14 @@
+// loading spinner
+
+.start-animation {
+  animation: 3s start-delay forwards;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
 // .search-bar section
 
 .search-bar {
@@ -70,11 +81,14 @@
     transform: translateX(15px);
     @include first-box-shadow;
     transition: all 1s;
+    cursor: pointer;
 
     &:hover {
+      transition-duration: 1s;
       @include first-box-shadow-hover;
       background-color: $functioning__item-background-color-hover;
       i {
+        transition-duration: 1s;
         color: $primary;
       }
     }
@@ -141,8 +155,6 @@
   @include new-baner;
 }
 
-
-
 .restaurant-prev-text-content {
   padding: 15px;
   height: 90px;
@@ -155,7 +167,8 @@
   .heart-icon {
     @include heart-icon;
 
-    .empty, .full {
+    .empty,
+    .full {
       position: absolute;
       right: 25px;
       top: 50%;
