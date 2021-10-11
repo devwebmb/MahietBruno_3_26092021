@@ -56,11 +56,6 @@ a {
   color: black;
 }
 
-body {
-  max-width: 1400px;
-  margin: auto;
-}
-
 header {
   width: 100%;
   display: flex;
@@ -170,8 +165,6 @@ footer .footer__item img {
   position: absolute;
   top: 0;
   width: 100%;
-  max-width: 1400px;
-  margin: auto;
 }
 
 .header__heading {
@@ -438,6 +431,7 @@ footer .footer__item img {
 .restaurant-menu .restaurant-menu__part-title {
   font-weight: 300;
   padding-bottom: 3px;
+  opacity: 0;
 }
 .restaurant-menu .green-line {
   width: 45px;
@@ -445,6 +439,7 @@ footer .footer__item img {
   border: none;
   border-top: solid 2px #99e2d0;
   margin-bottom: 15px;
+  opacity: 0;
 }
 .restaurant-menu .command-link {
   display: flex;
@@ -555,6 +550,10 @@ footer .footer__item img {
 
 @keyframes icon-menu-animation {
   0% {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
+  40% {
     opacity: 0;
     transform: rotate(-180deg);
   }

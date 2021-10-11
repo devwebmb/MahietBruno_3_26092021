@@ -44,6 +44,7 @@
   .restaurant-menu__part-title {
     font-weight: 300;
     padding-bottom: 3px;
+    opacity: 0;
   }
 
   .green-line {
@@ -52,6 +53,7 @@
     border: none;
     border-top: solid 2px $span-line-color;
     margin-bottom: 15px;
+    opacity: 0;
   }
 
   .command-link {
@@ -76,7 +78,7 @@
 }
 
 .first-animation {
-  animation: page-menu-animation 2s forwards;
+  animation: page-menu-animation 2s  forwards;
 }
 
 .second-animation {
@@ -168,6 +170,10 @@
     transform: rotate(-180deg);
   }
 
+  40% {
+    opacity: 0;
+    transform: rotate(-180deg);
+  }
   50% {
     transform: rotate(-90deg);
     opacity: 1;
