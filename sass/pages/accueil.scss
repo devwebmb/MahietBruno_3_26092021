@@ -1,7 +1,7 @@
 // loading spinner
 
 .start-animation {
-  animation: 3s start-delay forwards;
+  animation: 3.5s start-delay forwards;
   position: absolute;
   top: 0;
   width: 100%;
@@ -9,7 +9,13 @@
   margin: auto;
 }
 
-// .search-bar section
+// header heading
+
+.header__heading {
+  max-width: 500px;
+}
+
+// search-bar section
 
 .search-bar {
   display: flex;
@@ -69,6 +75,18 @@
     margin-bottom: 20px;
   }
 
+  .desktop-functioning-version {
+    @media (min-width:992px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .functioning__item {
+        width: 32%;
+      }
+    }
+  }
+
   .functioning__item {
     margin-bottom: 15px;
     padding: 10px 0;
@@ -119,6 +137,19 @@
 }
 
 //restaurant choice section
+
+.restaurant-choice__previews {
+  @media (min-width:992px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .restaurant-prev {
+      width: 49%;
+    }
+  }
+}
 
 .restaurant-choice {
   padding: 25px;

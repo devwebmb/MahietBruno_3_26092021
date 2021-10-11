@@ -21,14 +21,11 @@
 
   <body>
 
-  <section class="loading-spinner">
-    <div class="loading-spinner__logo">
-      <img
-        src="./public/images/logo/ohmyfood.png"
-        alt="Logo de l'entreprise Ohmyfood"
-      />
+  <section class="loader">
+    <div class="loader-animation"></div>
+    <div class="loader__content">    
+      <span class="loader__paragraph"><p>Ohmyfood...</p></span>
     </div>
-    <p class="loadind-spinner__paragraph">La gastronomie <br>à portée de clics !  </p>
   </section>
 
   <div class="start-animation">
@@ -68,107 +65,109 @@
 
       <section class="functioning">
         <h2 class="functioning__title">Fonctionnement</h2>
-        <article class="functioning__item">
-          <p>1</p>
-          <i class="fas fa-mobile-alt"></i>
-          <p>Choisissez un restaurant</p>
-        </article>
-        <article class="functioning__item">
-          <p>2</p>
-          <i class="fas fa-list-ul"></i>
-          <p>Composez votre menu</p>
-        </article>
-        <article class="functioning__item">
-          <p>3</p>
-          <i class="fas fa-store"></i>
-          <p>Dégustez au restaurant</p>
-        </article>
+        <div class="desktop-functioning-version">
+          <article class="functioning__item">
+            <p>1</p>
+            <i class="fas fa-mobile-alt"></i>
+            <p>Choisissez un restaurant</p>
+          </article>
+          <article class="functioning__item">
+            <p>2</p>
+            <i class="fas fa-list-ul"></i>
+            <p>Composez votre menu</p>
+          </article>
+          <article class="functioning__item">
+            <p>3</p>
+            <i class="fas fa-store"></i>
+            <p>Dégustez au restaurant</p>
+          </article>
+        </div>       
       </section>
 
       <section class="restaurant-choice" id="restaurant-anchor">
         <h2 class="restaurant-choice__title">Restaurants</h2>
-        <div class="restaurants-choice__previews">
-          <a href="./la-palette-du-gout.html" class="restaurant-prev">
-            <div class="new-banner">
-              <p>Nouveau</p>
-            </div>
-            <div class="restaurant-prev__img">
-              <img
-                src="./public/images/restaurants/palette-du-gout.jpg"
-                alt="Photo d'une assiette de nourriture"
-              />
-            </div>
-            <div class="restaurant-prev-text-content">
-              <h3 class="restaurant-prev-text-content__title">
-                La palette du goût
-              </h3>
-              <p class="restaurant-prev-text-conten__paragraph">Ménilmontant</p>
-              <div class="heart-icon">
-                <i class="far fa-heart empty"></i>
-                <i class="fas fa-heart full"></i>
+          <div class="restaurant-choice__previews">
+            <a href="./la-palette-du-gout.html" class="restaurant-prev">
+              <div class="new-banner">
+                <p>Nouveau</p>
               </div>
-            </div>
-          </a>
-          <a href="./la-note-enchantee.html" class="restaurant-prev">
-            <div class="new-banner">
-              <p>Nouveau</p>
-            </div>
-            <div class="restaurant-prev__img">
-              <img
-                src="./public/images/restaurants/note-enchantee.jpg"
-                alt="Photo d'une assiette de nourriture"
-              />
-            </div>
-            <div class="restaurant-prev-text-content">
-              <h3 class="restaurant-prev-text-content__title">
-                La note enchantée
-              </h3>
-              <p class="restaurant-prev-text-conten__paragraph">Charonne</p>
-              <div class="heart-icon">
-                <i class="far fa-heart empty"></i>
-                <i class="fas fa-heart full"></i>
+              <div class="restaurant-prev__img">
+                <img
+                  src="./public/images/restaurants/palette-du-gout.jpg"
+                  alt="Photo d'une assiette de nourriture"
+                />
               </div>
-            </div>
-          </a>
-          <a href="./a-la-francaise.html" class="restaurant-prev">
-            <div class="restaurant-prev__img">
-              <img
-                src="./public/images/restaurants/a-la-francaise.jpg"
-                alt="Photo d'une assiette de nourriture"
-              />
-            </div>
-            <div class="restaurant-prev-text-content">
-              <h3 class="restaurant-prev-text-content__title">
-                &#193; la française
-              </h3>
-              <p class="restaurant-prev-text-conten__paragraph">Cité rouge</p>
-              <div class="heart-icon">
-                <i class="far fa-heart empty"></i>
-                <i class="fas fa-heart full"></i>
+              <div class="restaurant-prev-text-content">
+                <h3 class="restaurant-prev-text-content__title">
+                  La palette du goût
+                </h3>
+                <p class="restaurant-prev-text-conten__paragraph">Ménilmontant</p>
+                <div class="heart-icon">
+                  <i class="far fa-heart empty"></i>
+                  <i class="fas fa-heart full"></i>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="./le-delice-des-sens.html" class="restaurant-prev">
-            <div class="restaurant-prev__img">
-              <img
-                src="./public/images/restaurants/delice-des-sens.jpg"
-                alt="Photo d'une assiette de nourriture"
-              />
-            </div>
-            <div class="restaurant-prev-text-content">
-              <h3 class="restaurant-prev-text-content__title">
-                Le délice des sens
-              </h3>
-              <p class="restaurant-prev-text-conten__paragraph">
-                Folie-Méricourt
-              </p>
-              <div class="heart-icon">
-                <i class="far fa-heart empty"></i>
-                <i class="fas fa-heart full"></i>
+            </a>
+            <a href="./la-note-enchantee.html" class="restaurant-prev">
+              <div class="new-banner">
+                <p>Nouveau</p>
               </div>
-            </div>
-          </a>
-        </div>
+              <div class="restaurant-prev__img">
+                <img
+                  src="./public/images/restaurants/note-enchantee.jpg"
+                  alt="Photo d'une assiette de nourriture"
+                />
+              </div>
+              <div class="restaurant-prev-text-content">
+                <h3 class="restaurant-prev-text-content__title">
+                  La note enchantée
+                </h3>
+                <p class="restaurant-prev-text-conten__paragraph">Charonne</p>
+                <div class="heart-icon">
+                  <i class="far fa-heart empty"></i>
+                  <i class="fas fa-heart full"></i>
+                </div>
+              </div>
+            </a>
+            <a href="./a-la-francaise.html" class="restaurant-prev">
+              <div class="restaurant-prev__img">
+                <img
+                  src="./public/images/restaurants/a-la-francaise.jpg"
+                  alt="Photo d'une assiette de nourriture"
+                />
+              </div>
+              <div class="restaurant-prev-text-content">
+                <h3 class="restaurant-prev-text-content__title">
+                  &#193; la française
+                </h3>
+                <p class="restaurant-prev-text-conten__paragraph">Cité rouge</p>
+                <div class="heart-icon">
+                  <i class="far fa-heart empty"></i>
+                  <i class="fas fa-heart full"></i>
+                </div>
+              </div>
+            </a>
+            <a href="./le-delice-des-sens.html" class="restaurant-prev">
+              <div class="restaurant-prev__img">
+                <img
+                  src="./public/images/restaurants/delice-des-sens.jpg"
+                  alt="Photo d'une assiette de nourriture"
+                />
+              </div>
+              <div class="restaurant-prev-text-content">
+                <h3 class="restaurant-prev-text-content__title">
+                  Le délice des sens
+                </h3>
+                <p class="restaurant-prev-text-conten__paragraph">
+                  Folie-Méricourt
+                </p>
+                <div class="heart-icon">
+                  <i class="far fa-heart empty"></i>
+                  <i class="fas fa-heart full"></i>
+                </div>
+              </div>
+            </a>
+          </div>
       </section>
     </main>
 

@@ -63,6 +63,18 @@
 
 // restaurant menu article
 
+.restaurant-menu-desktop {
+  @media (min-width:992px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .plat-choice {
+      width: 32%;
+    }
+  } 
+}
+
 .first-animation {
   animation: page-menu-animation 2s forwards;
 }
