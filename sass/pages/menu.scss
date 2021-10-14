@@ -157,7 +157,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    transform: rotate(180deg);
     opacity: 0;
   }
 }
@@ -170,11 +169,11 @@
     transform: rotate(-180deg);
   }
 
-  40% {
+  60% {
     opacity: 0;
     transform: rotate(-180deg);
   }
-  50% {
+  70% {
     transform: rotate(-90deg);
     opacity: 1;
   }

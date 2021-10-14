@@ -132,8 +132,8 @@ footer .footer__item img {
 }
 
 .loader-animation {
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   border: 0 solid #99e2d0;
   border-top: 16px solid #99e2d0;
   border-bottom: 16px solid #99e2d0;
@@ -145,8 +145,8 @@ footer .footer__item img {
 }
 
 .loader__content {
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   background: linear-gradient(#9656dc, #ff79da);
   margin: 40vh auto auto auto;
   display: flex;
@@ -544,7 +544,6 @@ footer .footer__item img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  transform: rotate(180deg);
   opacity: 0;
 }
 
@@ -553,11 +552,11 @@ footer .footer__item img {
     opacity: 0;
     transform: rotate(-180deg);
   }
-  40% {
+  60% {
     opacity: 0;
     transform: rotate(-180deg);
   }
-  50% {
+  70% {
     transform: rotate(-90deg);
     opacity: 1;
   }

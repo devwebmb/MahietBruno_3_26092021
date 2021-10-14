@@ -47,8 +47,8 @@
 }
 
 .loader-animation {
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   border: 0 solid $tertiary;
   border-top: 16px solid $tertiary;
   border-bottom: 16px solid $tertiary;
@@ -60,8 +60,8 @@
 }
 
 .loader__content {
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   background: linear-gradient( $primary, $secondary);
   margin: 40vh auto auto auto;
   @include vertical-center;
