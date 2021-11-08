@@ -1,24 +1,87 @@
 //fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 
-$logo-title-font: 'Shrikhand', cursive;
-$text-font: 'Roboto', sans-serif;
+$logo-title-font: "Shrikhand", cursive;
+$text-font: "Roboto", sans-serif;
 
 * {
-    font-family: $text-font;
+  font-family: $text-font;
 }
 
-h1, .header__heading, .footer__title, .loader__paragraph {
-    font-family: $logo-title-font;
+h1,
+.header__heading,
+.footer__title,
+.loader__paragraph {
+  font-family: $logo-title-font;
 }
 
 //reset
 
-html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}/*h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}*/ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0};
-
-a {
-    text-decoration: none;
-    color: black;
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+} /*h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}*/
+ul {
+  list-style: none;
+}
+button,
+input,
+select {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+iframe {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.plat-choice h3 {
+  font-weight: 400;
+}

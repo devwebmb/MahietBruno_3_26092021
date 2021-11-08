@@ -7,11 +7,36 @@
   font-family: "Roboto", sans-serif;
 }
 
-h1, .header__heading, .footer__title, .loader__paragraph {
+h1,
+.header__heading,
+.footer__title,
+.loader__paragraph {
   font-family: "Shrikhand", cursive;
 }
 
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -21,7 +46,9 @@ ul {
   list-style: none;
 }
 
-button, input, select {
+button,
+input,
+select {
   margin: 0;
 }
 
@@ -29,11 +56,14 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-img, video {
+img,
+video {
   height: auto;
   max-width: 100%;
 }
@@ -47,13 +77,18 @@ table {
   border-spacing: 0;
 }
 
-td, th {
+td,
+th {
   padding: 0;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.plat-choice h3 {
+  font-weight: 400;
 }
 
 header {
@@ -239,6 +274,7 @@ footer .footer__item img {
   }
   .functioning .desktop-functioning-version .functioning__item {
     width: 32%;
+    margin: 0;
   }
 }
 .functioning .functioning__item {
@@ -264,17 +300,24 @@ footer .footer__item img {
   transition-duration: 1s;
   color: #9656dc;
 }
+@media (min-width: 768px) {
+  .functioning .functioning__item {
+    margin: 0 15% 15px 15%;
+    width: 70%;
+  }
+}
 .functioning .functioning__item :nth-child(1) {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   color: #fff;
   background-color: #9656dc;
+  font-size: 0.9em;
   border-radius: 50%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: translateX(-15px);
+  transform: translate(-12.5px, 2.5px);
 }
 .functioning .functioning__item :nth-child(2) {
   height: 30px;
@@ -285,10 +328,19 @@ footer .footer__item img {
 }
 .functioning .functioning__item :nth-child(3) {
   height: 30px;
-  width: 65%;
+  width: 75%;
+  font-size: 0.8em;
+  text-align: left;
+  padding-left: 5%;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .functioning .functioning__item :nth-child(3) {
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -389,7 +441,7 @@ footer .footer__item img {
 }
 
 .restaurant-menu {
-  padding: 25px;
+  padding: 25px 12px;
   background-color: #f6f6f6;
   position: relative;
   border-radius: 35px 35px 0 0;
@@ -420,7 +472,7 @@ footer .footer__item img {
 .restaurant-menu .heart-icon .full {
   position: absolute;
   top: 25px;
-  right: 45px;
+  right: 30px;
 }
 .restaurant-menu .heart-icon:hover {
   cursor: pointer;
@@ -428,18 +480,25 @@ footer .footer__item img {
 .restaurant-menu .restaurant-menu__title {
   margin-bottom: 25px;
 }
+.restaurant-menu .plat-choice {
+  margin-bottom: 10%;
+}
 .restaurant-menu .restaurant-menu__part-title {
-  font-weight: 300;
-  padding-bottom: 3px;
+  padding-bottom: 7px;
   opacity: 0;
+  position: relative;
+  margin-bottom: 5%;
+  font-size: 0.8rem;
 }
 .restaurant-menu .green-line {
-  width: 45px;
-  color: #99e2d0;
-  border: none;
-  border-top: solid 2px #99e2d0;
-  margin-bottom: 15px;
+  width: 38px;
+  height: 3px;
+  background-color: #99e2d0;
   opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: green-line 2s forwards;
 }
 .restaurant-menu .command-link {
   display: flex;
@@ -468,6 +527,7 @@ footer .footer__item img {
   }
   .restaurant-menu-desktop .plat-choice {
     width: 32%;
+    margin-bottom: 0;
   }
 }
 
@@ -498,12 +558,19 @@ footer .footer__item img {
   cursor: pointer;
   transition: 0.5s;
 }
+.menu-item__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1.05rem;
+}
 .menu-item__content {
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-right: 40px;
+  font-size: 0.9rem;
 }
 .menu-item__price {
   font-weight: bold;
@@ -572,6 +639,14 @@ footer .footer__item img {
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes green-line {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }

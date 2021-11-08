@@ -14,7 +14,7 @@
 //menu restaurant
 
 .restaurant-menu {
-  padding: 25px;
+  padding: 25px 12px;
   background-color: $restaurant-menu-background-color;
   position: relative;
   border-radius: 35px 35px 0 0;
@@ -29,7 +29,7 @@
     .full {
       position: absolute;
       top: 25px;
-      right: 45px;
+      right: 30px;
     }
 
     &:hover {
@@ -41,19 +41,27 @@
     margin-bottom: 25px;
   }
 
+  .plat-choice {
+    margin-bottom: 10%;
+  }
+
   .restaurant-menu__part-title {
-    font-weight: 300;
-    padding-bottom: 3px;
+    padding-bottom: 7px;
     opacity: 0;
+    position: relative;
+    margin-bottom: 5%;
+    font-size: 0.8rem;
   }
 
   .green-line {
-    width: 45px;
-    color: $span-line-color;
-    border: none;
-    border-top: solid 2px $span-line-color;
-    margin-bottom: 15px;
+    width: 38px;
+    height: 3px;
+    background-color: $span-line-color;
     opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: green-line 2s forwards;
   }
 
   .command-link {
@@ -66,19 +74,20 @@
 // restaurant menu article
 
 .restaurant-menu-desktop {
-  @media (min-width:992px) {
+  @media (min-width: 992px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     .plat-choice {
       width: 32%;
+      margin-bottom: 0;
     }
-  } 
+  }
 }
 
 .first-animation {
-  animation: page-menu-animation 2s  forwards;
+  animation: page-menu-animation 2s forwards;
 }
 
 .second-animation {
@@ -104,12 +113,20 @@
   cursor: pointer;
   transition: 0.5s;
 
+  &__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.05rem;
+  }
+
   &__content {
     font-weight: 300;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-right: 40px;
+    font-size: 0.9rem;
   }
 
   &__price {
@@ -194,6 +211,16 @@
 
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes green-line {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
     opacity: 1;
   }
 }
