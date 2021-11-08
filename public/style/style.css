@@ -490,16 +490,6 @@ footer .footer__item img {
   margin-bottom: 5%;
   font-size: 0.8rem;
 }
-.restaurant-menu .green-line {
-  width: 38px;
-  height: 3px;
-  background-color: #99e2d0;
-  opacity: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  animation: green-line 2s forwards;
-}
 .restaurant-menu .command-link {
   display: flex;
   justify-content: space-around;
@@ -517,6 +507,16 @@ footer .footer__item img {
 .restaurant-menu .command-link:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.5) 0px 6px 6px;
   opacity: 0.85;
+}
+
+.restaurant-menu__part-title::after {
+  content: "";
+  background-color: #99e2d0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 38px;
+  height: 3px;
 }
 
 @media (min-width: 992px) {
